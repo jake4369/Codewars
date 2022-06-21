@@ -176,3 +176,17 @@ function twoSum(numbers, target) {
     }
   }
 }
+
+// Count characters in your string - 21/06/2022
+// https://www.codewars.com/kata/52efefcbcdf57161d4000091
+function count(string) {
+  if (!string) {
+    return {};
+  } else {
+    let count = {};
+    string.split("").forEach((letter) => {
+      count[letter] ? count[letter]++ : (count[letter] = 1);
+    });
+    return count;
+  }
+}
