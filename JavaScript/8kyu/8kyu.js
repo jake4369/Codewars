@@ -90,3 +90,9 @@ class Kata {
     return length * width * height;
   }
 }
+
+// Is it even? - 22/06/2022
+// https://www.codewars.com/kata/555a67db74814aa4ee0001b5
+function testEven(n) {
+  return n % 2 === 0;
+}
