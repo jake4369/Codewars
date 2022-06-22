@@ -68,3 +68,25 @@ function nameShuffler(str) {
   let [firstName, lastName] = str.split(" ");
   return `${lastName} ${firstName}`;
 }
+
+// Filter out the geese - 22/06/2022
+// https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7
+function gooseFilter(birds) {
+  const geese = [
+    "African",
+    "Roman Tufted",
+    "Toulouse",
+    "Pilgrim",
+    "Steinbacher",
+  ];
+
+  return birds.filter((bird) => !geese.includes(bird));
+}
+
+// Volume of a Cuboid - 22/06/2022
+// https://www.codewars.com/kata/58261acb22be6e2ed800003a
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
