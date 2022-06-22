@@ -96,3 +96,13 @@ class Kata {
 function testEven(n) {
   return n % 2 === 0;
 }
+
+// String repeat - 22/06/2022
+// https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
+function repeatStr(n, s) {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    str += s;
+  }
+  return str;
+}
