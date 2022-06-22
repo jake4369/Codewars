@@ -30,3 +30,13 @@ const sequenceSum = (begin, end, step) => {
   }
   return sum;
 };
+
+// Is this a triangle? - 21/06/2022
+// https://www.codewars.com/kata/56606694ec01347ce800001b
+function isTriangle(a, b, c) {
+  if (a + b > c && b + c > a && c + a > b) {
+    return true;
+  } else {
+    return false;
+  }
+}
