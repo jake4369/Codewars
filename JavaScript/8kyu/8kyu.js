@@ -106,3 +106,7 @@ function repeatStr(n, s) {
   }
   return str;
 }
+
+function smash(words) {
+  return words.join("");
+}
