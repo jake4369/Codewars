@@ -40,3 +40,14 @@ function isTriangle(a, b, c) {
     return false;
   }
 }
+
+// Count the divisors of a number - 28/06/2022
+// https://www.codewars.com/kata/542c0f198e077084c0000c2e
+function getDivisorsCnt(n) {
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) count++;
+  }
+  return count;
+}
+getDivisorsCnt(11);
