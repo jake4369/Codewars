@@ -57,3 +57,12 @@ function highAndLow(numbers) {
   const arr = numbers.split(" ").sort((a, b) => a - b);
   return [arr[arr.length - 1], arr[0]].join(" ");
 }
+
+// Mumbling - 28/06/2022
+// https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
+function accum(s) {
+  return s
+    .split("")
+    .map((el, i) => el.toUpperCase() + el.toLowerCase().repeat(i))
+    .join("-");
+}
