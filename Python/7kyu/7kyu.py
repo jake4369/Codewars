@@ -10,3 +10,8 @@ def odd_or_even(arr):
         return 'even'
     else:
         return 'odd'
+
+# Anagram Detection - 06/07/2022
+# https://www.codewars.com/kata/529eef7a9194e0cbc1000255
+def is_anagram(test, original):
+    return sorted(original.lower()) == sorted(test.lower()) 
