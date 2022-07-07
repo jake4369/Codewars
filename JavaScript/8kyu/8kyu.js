@@ -112,3 +112,13 @@ function repeatStr(n, s) {
 function smash(words) {
   return words.join(" ");
 }
+
+// Powers of 2 - 07/07/2022
+// https://www.codewars.com/kata/57a083a57cb1f31db7000028
+function powersOfTwo(n) {
+  let results = [];
+  for (let i = 0; i <= n; i++) {
+    results.push(Math.pow(2, i));
+  }
+  return results;
+}
