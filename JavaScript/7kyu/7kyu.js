@@ -66,3 +66,53 @@ function accum(s) {
     .map((el, i) => el.toUpperCase() + el.toLowerCase().repeat(i))
     .join("-");
 }
+
+// Scrabble Score - 07/07//2022
+// https://www.codewars.com/kata/558fa34727c2d274c10000ae
+function scrabbleScore(str) {
+  const upperStr = str.toUpperCase();
+  const dic = {
+    " ": 0,
+    A: 1,
+    E: 1,
+    I: 1,
+    O: 1,
+    U: 1,
+    L: 1,
+    N: 1,
+    R: 1,
+    S: 1,
+    T: 1,
+    D: 2,
+    G: 2,
+    B: 3,
+    C: 3,
+    M: 3,
+    P: 3,
+    F: 4,
+    H: 4,
+    V: 4,
+    W: 4,
+    Y: 4,
+    K: 5,
+    J: 8,
+    X: 8,
+    Q: 10,
+    Z: 10,
+  };
+
+  let score = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    dic[upperStr.charAt(i)] === undefined
+      ? (score += 0)
+      : (score += dic[upperStr.charAt(i)]);
+  }
+
+  console.log(score);
+}
+
+scrabbleScore("st re et");
+
+// console.log("st re et".split(" ").join("").toUpperCase().trim());
+// console.log("st re et".split(" ").forEach((el) => console.log(el)));
