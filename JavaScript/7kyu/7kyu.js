@@ -109,10 +109,17 @@ function scrabbleScore(str) {
       : (score += dic[upperStr.charAt(i)]);
   }
 
-  console.log(score);
+  return score;
 }
 
-scrabbleScore("st re et");
+// Help Suzuki rake his garden! - 10/07/2022
+// https://www.codewars.com/kata/571c1e847beb0a8f8900153d
+const garden1 =
+  "slug spider rock gravel gravel gravel gravel gravel gravel gravel";
 
-// console.log("st re et".split(" ").join("").toUpperCase().trim());
-// console.log("st re et".split(" ").forEach((el) => console.log(el)));
+function rakeGarden(garden) {
+  return garden
+    .split(" ")
+    .map((word) => (word === "rock" ? "rock" : "gravel"))
+    .join(" ");
+}
